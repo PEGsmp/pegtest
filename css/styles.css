@@ -50,6 +50,24 @@ body > .container {
     border-radius: 10px;
 }
 
+.iframe {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.iframe::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 .image > .avatar {
     position: absolute;
     z-index: 2;
@@ -116,6 +134,24 @@ h6 {
     border-radius: 10px;
 }
 
+.bio iframe {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.bio iframe::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 .bio > a.open {
     color: var(--open-color);
 }
@@ -171,6 +207,14 @@ h6 {
     padding: 15px 25px;
     border-radius: 5px;
     background-color: #ff0000;
+}
+.link-tt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #000000;
 }
 .link-twitch {
     display: flex;
@@ -236,6 +280,20 @@ h6 {
 }
 
 .link-youtube > a.open:visited {
+    color: var(--open-color);
+}
+
+.link-tt > p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--link-text-color);
+}
+
+.link-tt > a.open {
+    color: var(--open-color);
+}
+
+.link-tt > a.open:visited {
     color: var(--open-color);
 }
 
